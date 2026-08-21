@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troco Verificado</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Troco Verificado</h2>
+        
+        <div class="form-group">
+            <label for="preco">Preço unitário do produto:</label>
+            <input type="number" id="preco" step="0.01" min="0" placeholder="0.00">
+        </div>
+
+        <div class="form-group">
+            <label for="quantidade">Quantidade comprada:</label>
+            <input type="number" id="quantidade" min="1" placeholder="1">
+        </div>
+
+        <div class="form-group">
+            <label for="dinheiro">Dinheiro recebido:</label>
+            <input type="number" id="dinheiro" step="0.01" min="0" placeholder="0.00">
+        </div>
+
+        <button onclick="calcularTroco()">Calcular</button>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+
+</body>
+</html>
+
